@@ -1,12 +1,24 @@
+:root {
+  --lightbg: #F4F4F4; 
+  --darkbg: #222;
+}
+
+body {
+  background-color: var(--lightbg);
+}
+
+body.dark-mode {
+  background-color: var(--darkbg);
+}
+
 .ws-dark-button {
-  background-color: #222;
+  background: var(--darkbg);
+  background-color: var(--darkbg);
   width: 56px;
   height: 56px;
   border-radius: 100%;
-  background: #222;
   border: none;
   outline: none;
-  color: #fff;
   font-size: 25px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   transition: 0.3s;
@@ -45,6 +57,7 @@
   margin: 15.5px !important;
   vertical-align: 0 !important;
   text-align: center !important;
+  cursor: pointer !important;
 }
 
 span.hidden {
@@ -58,9 +71,8 @@ span.hidden.immediate {
 }
 
 .dark-mode .ws-dark-button {
-  background-color: #f4f4f4;
-  background: #f4f4f4;
+  background-color: var(--lightbg);
+  background: var(--lightbg);
   box-shadow: 0 2px 5px 0 rgba(255, 255, 255, 0.16), 0 2px 10px 0 rgba(255, 255, 255, 0.12);
-  color: #000;
   transition: background-color 0.3s ease-in-out;
 }
