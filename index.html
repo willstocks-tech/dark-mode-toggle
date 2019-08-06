@@ -9,18 +9,18 @@
     <script src="./js/toggle.js" type="application/javascript"></script>
   </head>
   <body>
-    <!--Immediately apply body class based on pre-existing cookie-->
+    <!--User selected theme (cookie) check start-->
     <script>
-	    if (document.cookie.indexOf("darkMode") > 0) {
+      if (document.cookie.indexOf("darkMode") > 0) {
         //cookie exists
         document.body.classList.add("dark-mode");
-	    } else {
+      } else {
         //cookie does not exist
-		    document.body.classList.remove("dark-mode");
-	    }
+	      document.body.classList.remove("dark-mode");
+      }
     </script>
-    
-    <!--Dark Mode toggle-->
+    <!--User cookie check end -->  
+    <!--Dark Mode toggle start-->
     <button class="ws-dark-button" id="dark-toggle-floating-action">
       <input type="checkbox" id="dark-toggle-state" />
       <span class="moon">
@@ -42,6 +42,6 @@
         />
       </span>
     </button>
-    
+    <!--Dark Mode toggle end-->
   </body>
 </html>
